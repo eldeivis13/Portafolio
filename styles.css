@@ -609,6 +609,10 @@ footer {
 
 
 @media (max-width: 768px) {
+    header {
+        display: none !important;
+    }
+    
     .logo {
         font-size: 0.9rem;
     }
@@ -630,14 +634,18 @@ footer {
         flex-direction: column;
     }
 
+    .section {
+        padding: 4rem 0 !important;
+    }
+
     pre {
         overflow-x: auto;
         width: 100%;
     }
 
     pre code {
-        font-size: 0.65rem !important; /* Aún más pequeño para máxima seguridad */
-        white-space: pre-wrap; /* Intentar que el nombre envuelva */
+        font-size: 0.65rem !important;
+        white-space: pre-wrap;
         word-break: break-all;
     }
 
