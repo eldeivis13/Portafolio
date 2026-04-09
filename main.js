@@ -9,6 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
         menuBtn.style.transform = navLinks.classList.contains('active') ? 'rotate(90deg)' : 'rotate(0deg)';
     });
 
+    // Close menu when a link is clicked (for mobile)
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            menuBtn.style.transform = 'rotate(0deg)';
+        });
+    });
+
     // Header Scroll Effect
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
