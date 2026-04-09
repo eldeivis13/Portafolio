@@ -608,9 +608,9 @@ footer {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .logo {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .hero h1 {
@@ -630,8 +630,15 @@ footer {
         flex-direction: column;
     }
 
+    pre {
+        overflow-x: auto;
+        width: 100%;
+    }
+
     pre code {
-        font-size: 0.7rem !important;
+        font-size: 0.65rem !important; /* Aún más pequeño para máxima seguridad */
+        white-space: pre-wrap; /* Intentar que el nombre envuelva */
+        word-break: break-all;
     }
 
     .visual-card {
