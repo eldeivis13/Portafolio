@@ -561,10 +561,22 @@ footer {
 
     .section-title {
         font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .section-subtitle {
+        text-align: center;
     }
 
     .hero h1 {
         font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .lead {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .projects-grid {
@@ -573,6 +585,32 @@ footer {
 
     .project-card {
         max-width: 100%;
+        text-align: center; /* Centrar texto en tarjetas */
+    }
+
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tags {
+        justify-content: center; /* Centrar etiquetas tecnológicas */
+    }
+
+    .skill-groups {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .skill-group h4 {
+        justify-content: center;
+    }
+
+    .skill-item {
+        justify-content: center;
+        text-align: center;
     }
 
     .footer-content {
@@ -580,7 +618,12 @@ footer {
         gap: 2rem;
         text-align: center;
     }
+
+    .social-links {
+        justify-content: center;
+    }
 }
+
 
 @media (max-width: 480px) {
     .hero h1 {
